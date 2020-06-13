@@ -1,0 +1,9 @@
+n,m=map(int,input().split())
+mat=list(map(int,input().split()))
+mat.sort()
+i=0
+arr=[]
+while(i+n-1<m):
+    arr.append(mat[i+n-1]-mat[i])
+    i+=1
+print(min(arr))
