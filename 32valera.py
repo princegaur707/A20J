@@ -1,3 +1,21 @@
+n,m = map(int,input().split())
+from collections import defaultdict
+d = defaultdict(list)
+ans = []
+for i in range(n):
+    a = list(map(int,input().split()))
+    b = min(a[1:])
+    if b < m:
+        ans.append(i+1)
+if ans:
+    print(len(ans))
+    print(*sorted(ans))
+else:
+    print(0)
+
+
+
+
 n,v=map(int,input().split())
 mat=[]
 arr=[]
