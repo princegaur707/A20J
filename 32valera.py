@@ -1,6 +1,4 @@
 n,m = map(int,input().split())
-from collections import defaultdict
-d = defaultdict(list)
 ans = []
 for i in range(n):
     a = list(map(int,input().split()))
@@ -14,8 +12,7 @@ else:
     print(0)
 
 
-
-
+#Another method
 n,v=map(int,input().split())
 mat=[]
 arr=[]
