@@ -20,4 +20,4 @@ else:
         if arr[i]%2==0:
             print(i+1)
             break
-        
+  
