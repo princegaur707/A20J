@@ -1,9 +1,9 @@
-n = int(input())
-res = str()
+n=int(input())
+res=""
 for i in range(n):
-    res+=str(input())
+    res+=input()
 print(res)
-if res == res[::-1]:
+if res==res[::-1]:
     print("YES")
 else:
     print("NO")
