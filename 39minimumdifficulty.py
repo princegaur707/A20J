@@ -1,0 +1,5 @@
+n=int(input())
+mat=list(map(int,input().split()))
+x=min([mat[i+2]-mat[i] for i in range(n-2)])
+y=max([mat[i+1]-mat[i] for i in range(n-1)])
+print(max(x,y))
