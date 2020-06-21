@@ -1,3 +1,21 @@
+n = int(input())
+a = list(map(int,input().split()))
+from collections import defaultdict
+d = defaultdict(list)
+for i in range(0,len(a)):
+    m = i%3
+    d[m].append(a[i])
+d = dict(d)
+x = max(d.items(),key=lambda x:sum(x[1]))[0]
+if x == 0:
+    print("chest")
+elif x == 1:
+    print("biceps")
+elif x == 2:
+    print("back")
+
+
+    
 n=int(input())
 mat=list(map(int,input().split()))
 exe=['chest','biceps','back']
@@ -14,3 +32,4 @@ while(n>0):
     i+=3
 ind=arr.index(max(arr))
 print(exe[ind])
+
