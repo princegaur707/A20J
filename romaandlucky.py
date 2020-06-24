@@ -5,3 +5,7 @@ def cnt(n,k):
             cnt+=1
         n = n//10
     return cnt <= k
+n,k = map(int,input().split())
+a = list(map(int,input().split()))
+a = list(filter(lambda x:cnt(x,k),a))
+print(len(a))
