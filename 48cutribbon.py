@@ -15,5 +15,5 @@ for i in range(1,n+1):
     else:
         z = dp[i-c]
     dp[i] = max(x+1,y+1,z+1)
-print(dp)    
+    print(dp)    
 print(dp[-1])

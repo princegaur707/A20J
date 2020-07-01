@@ -7,4 +7,4 @@ c = min(b)
 if max(2*v,p) < c:
     print(max(2*v,p))
 else:
-    print(-1)
+    print(-1))
