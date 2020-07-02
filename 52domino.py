@@ -6,7 +6,7 @@ for i in range(n):
 mat=list(zip(*mat))
 if sum(mat[0])%2==0 and sum(mat[1])%2==0:
     print(0)
-elif sum(mat[0])%2==1 and sum(mat[1])%2==1 and mat[0]!=mat[1]:
+elif sum(mat[0])%2==1 and sum(mat[1])%2==1 and len(mat[0])!=1:
     print(1)
 else:
     print(-1)
