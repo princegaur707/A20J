@@ -12,4 +12,5 @@ for i in range(1,len(res)):
 if flag:
     print("Happy Alex")
 else:
+    
     print("Poor Alex")
