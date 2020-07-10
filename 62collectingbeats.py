@@ -1,0 +1,5 @@
+n=int(input())
+arr=list(input())
+brr=list(input())
+crr=list(input())
+drr=list(input())
