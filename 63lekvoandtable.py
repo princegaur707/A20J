@@ -1,3 +1,13 @@
+#***********************************************#
+I=input
+k=int(I())*2
+s=""
+for _ in '0'*4:s+=I()
+print("YNEOS"[any(s.count(str(i))>k for i in range(10))::2])
+
+#*************************************************#
+
+
 from collections import Counter
 k=int(input())
 string=""
