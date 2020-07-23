@@ -1,12 +1,7 @@
-mat=[]
-for i in range(4):
-    mat.append(input())
-arr=sorted(mat,key=lambda x:len(x))
-brr=sorted(mat,key=lambda x:len(x),reverse=True)
-if (len(arr[-1])-2)>=(2*len(arr[0])-2):
-    print(arr[0][0])
-elif (len(brr[0])-2)>=(2*(len(brr[-1])-2)):
-    print("Hello!")
-    print(brr[0][0])
-else:
-    print('C') 
+arr = sorted([(len(input())-2,i) for i in 'ABCD'])
+p=0
+if 2 * arr[0][0] <= arr[1][0]:
+    p+=1
+if 2 * arr[-2][0] <= arr[-1][0]:
+    p+=2
+print(['C',arr[0][1],arr[-1][1],'C'][p])
