@@ -18,3 +18,17 @@ res = not d
 if res:
     d[0]=0
 print(d)
+n,m=map(int,input().split())
+arr=list(map(int,input().split()))
+mat=[]
+for i in range(m):
+    mat.append(list(map(int,input().split())))
+for i in mat:
+    s=0
+    for j in range(len(mat)):
+        s+=arr[mat[i][j]]
+    if s==0:
+        print(0)
+    else:
+        print(1)
+        
