@@ -1,3 +1,4 @@
+#no matter there is 1 or -1 in that range or not it should be present in array in sufficient quantity
 n,m=map(int,input().split())
 arr=list(map(int,input().split()))
 mat=[]
