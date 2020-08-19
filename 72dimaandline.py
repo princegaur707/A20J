@@ -9,4 +9,5 @@ for i in range(1, n):
             exit()
     m.append([min(p,x[i]),max(p,x[i])])
     p = x[i]
+    
 print("no")
